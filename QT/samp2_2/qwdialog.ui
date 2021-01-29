@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QWDialog</class>
+ <widget class="QDialog" name="QWDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>321</width>
+    <height>329</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog by Designer</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>280</y>
+     <width>256</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QPushButton" name="btnOK">
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnCancel">
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnClose">
+      <property name="text">
+       <string>退出</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>11</y>
+     <width>258</width>
+     <height>256</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QCheckBox" name="chkBoxUnder">
+          <property name="text">
+           <string>Underline</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBoxItalic">
+          <property name="text">
+           <string>Italic</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBoxBold">
+          <property name="text">
+           <string>Bold</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QRadioButton" name="rBtnBlack">
+          <property name="text">
+           <string>Black</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="rBtnRed">
+          <property name="text">
+           <string>Red</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="rBtnBlue">
+          <property name="text">
+           <string>Blue</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="txtEdit">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="plainText">
+       <string>Hello I'm Xiaoyao!</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>groupBox_2</zorder>
+  <zorder>rBtnBlue</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>textBrowser</zorder>
+  <zorder>btnCancel</zorder>
+  <zorder>btnOK</zorder>
+  <zorder>btnClose</zorder>
+  <zorder></zorder>
+  <zorder>groupBox_2</zorder>
+  <zorder>checkBoxItalic</zorder>
+  <zorder>chkBoxUnder</zorder>
+  <zorder>rBtnRed</zorder>
+  <zorder>checkBoxBold</zorder>
+  <zorder>rBtnBlue</zorder>
+  <zorder>rBtnBlack</zorder>
+  <zorder>txtEdit</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>QWDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>367</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>154</x>
+     <y>386</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnOK</sender>
+   <signal>clicked()</signal>
+   <receiver>QWDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>373</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>374</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>QWDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>253</x>
+     <y>375</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
